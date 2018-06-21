@@ -303,5 +303,5 @@ void writeMessage(char * message)
             printf("error opening sim_out: %s\n", message);
         }
         fclose(fp);
-    }
+    } 
 }
