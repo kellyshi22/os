@@ -16,8 +16,7 @@ int main (int argc, char * argv[])
         printf("Usage: ./sds r w, t1 t2\n");
         return -1;
     }
-
-	// rename argument names
+    // rename argument names
     r = atoi(argv[1]);
     w = atoi(argv[2]);
     t1 = atoi(argv[3]);
