@@ -71,7 +71,7 @@ int main (int argc, char * argv[]) {
     Locks * locks = (Locks*)mmap(0, sizeof(Locks), PROT_WRITE | PROT_READ, MAP_SHARED, locks_fd, 0);
     int * countarray = (int*)mmap(0, sizeof(int)*b, PROT_WRITE | PROT_READ, MAP_SHARED, countarray_fd, 0);
     int * fastestreader = (int*)mmap(0, sizeof(int), PROT_WRITE | PROT_READ, MAP_SHARED, fastestreader_fd, 0);
-	int * sharedarray = (int*)mmap(0, sizeof(int)*d, PROT_WRITE | PROT_READ, MAP_SHARED, sharedarray_fd, 0);
+    int * sharedarray = (int*)mmap(0, sizeof(int)*d, PROT_WRITE | PROT_READ, MAP_SHARED, sharedarray_fd, 0);
 
     // initialise semaphores 
     error += sem_init(&locks->read, -1, 1);
